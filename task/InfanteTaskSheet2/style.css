@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: relative;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    font-size: 5;
+    font-family: "Monotype Corsiva", Bold, Italic, Center;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid blue;
+}
+
+
+
+/* Header Styles */
+header {
+    background-image: linear-gradient(to bottom right, #333, #000);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 500;
+    
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Fixed positioning */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Take up full width */
+}
+
+/* ACADS */
+#academic-information { 
+    background-color: #dacfcf;
+    padding: 20px;
+    margin: 5px auto;
+    max-width: 1200px;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#academic-information h2 {
+    font-size: 3;
+    margin-bottom: 40px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+    width: 150px;
+}
+.school-image {
+    max-width: 100%; /* Set the width to desired size */
+    height: auto; /* Maintain aspect ratio */
+   
+}
+/* PERSONAL Styles */
+#personal-information {
+    background-color: #dacfcf;
+    padding: 20px;
+    margin: 5px auto;
+    max-width: 1200px;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#personal-information h2 {
+    font-size: 3;
+    margin-bottom: 40px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+    width: 150px;
+}
+
+/* FAMILY Styles */
+#family-information {
+    background-color: #dacfcf;
+    padding: 20px;
+    margin: 5px auto;
+    max-width: 1200px;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#family-information h2 {
+    font-size: 3;
+    margin-bottom: 40px;
+}
+
+.family-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.family-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.family-label {
+    font-weight: bold;
+    width: 150px;
+}
+
+
+/* ABOUT ME Styles */
+#about-me {
+    background-color: #dacfcf;
+    padding: 20px;
+    margin: 5px auto;
+    max-width: 1200px;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-me h2 {
+    font-size: 3;
+    margin-bottom: 40px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-gap: 0px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.label {
+    font-weight: bold;
+    width: 150px;
+}
+
+
+
+/* RESUME Styles */
+#resume {
+    background-color: #dacfcf;
+    padding: 20px;
+    margin: 5px auto;
+    max-width: 1200px;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#resume h2 {
+    font-size: 3;
+    margin-bottom: 40px;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 20px;
+    
+}
+
+.resume-section {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.resume-section h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.resume-item {
+    margin-bottom: 30px;
+}
+
+.resume-label {
+    font-weight: bold;
+}
+
+.resume-info {
+    margin-left: 10px;
+}

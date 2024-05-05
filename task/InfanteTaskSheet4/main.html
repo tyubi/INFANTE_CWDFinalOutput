@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infante's Personal Website</title>
+    <style>
+
+        /* Header Styles */
+        header {
+            background-image: linear-gradient(to bottom right, #333, #000);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+                /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed; /* Fixed positioning */
+            bottom: 0; /* Position at the bottom */
+            width: 100%; /* Take up full width */
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 500;
+            
+        }
+
+        h1 {
+            font-family: "Georgia", sans-serif;
+            font-weight: bold;
+         
+            font-size: 5;
+            margin: 0; /* Reset margin to remove default spacing */
+        }
+
+
+        .tiles-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .tile {
+            background-image: linear-gradient(to bottom right, #c9c9c9, #a0a0a0);
+            height: 300px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .tile h2 {
+            margin-bottom: 40px; /* Add space between text and image */
+            font-family: "Monotype Corsiva", cursive;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 3; /* Adjust font size for tiles */
+            margin: 0; /* Reset margin to remove default spacing */
+        }
+
+        .tile:hover {
+            background-color: #b9b9b9;
+        }
+        .tile img {
+            width: 100px; /* Adjust image size as needed */
+            height: 100px; /* Adjust image size as needed */
+            border-radius: 50%; /* Make the image circular */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Infante's Personal Website</h1>
+    </header>
+
+    <div class="tiles-container">
+        <a href="academic.html" class="tile">
+            <img src="acad.jpg" alt="Academic">
+            <h2>Academic Information</h2>
+        </a>
+        <a href="personal.html" class="tile">
+            <img src="images.png" alt="Academic">
+            <h2>Personal Information</h2>
+        </a>
+        <a href="family.html" class="tile">
+            <img src="fami.jpg" alt="Academic">
+            <h2>Family Information</h2>
+        </a>
+        <a href="about.html" class="tile">
+            <img src="unnamed.jpg" alt="Academic">
+            <h2>About Me</h2>
+        </a>
+        <a href="imp/infantebiodata.html" class="tile">
+            <img src="jobs.jpg" alt="Academic">
+            <h2>Resume</h2>
+        </a>
+        <a href="gallery.html" class="tile">
+            <img src="imgg.jpg" alt="Academic">
+            <h2>Gallery</h2>
+        </a>
+    </div>
+
+    <footer>
+        <p>EDRIAN INFANTE || accompanied.you@gmail.com || 2024</p>
+    </footer>
+
+</body>
+</html>

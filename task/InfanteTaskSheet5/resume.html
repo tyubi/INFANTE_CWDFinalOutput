@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Page Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex: 1;
+        }
+        nav {
+            flex: 1;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border: 1px solid #525151;
+            border-radius: 5px;
+        }
+        nav h2 {
+            margin-top: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            margin-bottom: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        article {
+            flex: 3;
+            padding: 20px;
+        }
+        aside {
+            flex: 1;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        aside h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto;
+        }
+        section {
+            flex: 3;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+/* RESUME Styles */
+#resume {
+    background-color: #c9c9c9;
+    padding: 20px;
+    margin: 5px auto;
+    max-width: 1200px;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#resume h2 {
+    font-size: 3;
+    margin-bottom: 40px;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 20px;
+    
+}
+
+.resume-section {
+    padding: 20px;
+    border: 2px solid #1d1c1c;
+    border-radius: 8px;
+}
+
+.resume-section h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.resume-item {
+    margin-bottom: 30px;
+}
+
+.resume-label {
+    font-weight: bold;
+}
+
+.resume-info {
+    margin-left: 10px;
+}
+        
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+}
+
+.info-item .label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.info-item img {
+    margin-right: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PERSONAL HOME PAGE</h1>
+    </header>
+
+    <main>
+        <nav>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="academic.html">ACADEMIC INFORMATION</a></li>
+                <li><a href="personal.html">PERSONAL INFORMATION</a></li>
+                <li><a href="family.html">FAMILY INFORMATION</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+            </ul>
+        </nav>
+
+        <section id="resume">
+            <h2>RESUME</h2>
+            <div class="resume-grid">
+                <div class="resume-section">
+                    <h3>Educational Background</h3>
+                    <div class="resume-item">
+                        <span class="resume-label">Primary:</span>
+                        <span class="resume-info">Mapangpang Elem. School - Lupao, N.E. - 2014</span>
+                    </div>
+                    <div class="resume-item">
+                        <span class="resume-label">Secondary:</span>
+                        <span class="resume-info">DHC National Highschool - Lupao, N.E. - 2020</span>
+                    </div>
+                    <div class="resume-item">
+                        <span class="resume-label">Tertiary:</span>
+                        <span class="resume-info">PUP Manila - Sta. Mesa, Manila - 2025</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Formal Image:</span>
+                        <img src="2x2.jpg" alt="School Logo" width="100" height="100">
+                    </div>
+                </div>
+                <div class="resume-section">
+                    <h3>Seminar Attended</h3>
+                    <div class="resume-item">
+                        <span class="resume-label">Seminar Title:</span>
+                        <span class="resume-info">Aug-Oct 2023 - Ortigas Ave, Pasig -  Lexmeet Inc.</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Your Picture:</span>
+                        <img src="download.png" alt="School Logo" width="100" height="100">
+                    </div>
+                </div>
+                <div class="resume-section">
+                    <h3>Character Reference</h3>
+                    <div class="resume-item">
+                        <span class="resume-label">Full Name1:</span>
+                        <span class="resume-info">Position, Company Name, Contact Number</span>
+                    </div>
+                    <div class="resume-item">
+                        <span class="resume-label">Full Name2:</span>
+                        <span class="resume-info">Position, Company Name, Contact Number</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <h2>ABOUT ME:</h2>
+            <p>Welcome to my "About Me" page! My name is Edrian Infante, and I'm passionate about anything that I wanna learn. I'm 20 years old and currently living in Manila.</p>
+            <p>I have always been fascinated by Arts. Whether it's Cartooning, Poster Making, or Painting, I find joy and fulfillment in pursuing these activities in my free time.</p>
+            <p>Professionally, I have a background in UI/UX design, with experience in Frontend Development. I'm dedicated to become successful someday.</p>
+            <p>Aside from work and hobbies, I enjoy spending time with my friends and family, exploring new places, and trying out different cuisines. I believe in living life to the fullest and making meaningful connections along the way.</p>
+            <p>Feel free to explore my website and learn more about me. If you have any questions or would like to connect, don't hesitate to reach out!</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>EDRIAN INFANTE || CWD TASK 5 || 2024</p>
+        </footer>
+</body>
+</html>

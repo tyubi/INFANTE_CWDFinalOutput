@@ -1,0 +1,342 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <style>
+        
+        @font-face {
+            font-family: "Monotype";
+            src: url("monotype-corsiva-bold.otf") format("opentype");
+        }
+        body {
+            font-family: Verdana;
+            font-size: 3;
+            margin: 0;
+            padding: 5px;
+        }
+        .container {
+            width: 8.5in;
+            height: 11in;
+            margin: 0 auto;
+            position: relative;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Verdana;
+            font-weight: bold;
+        }
+        p, ul, ol {
+            font-family: Calibri;
+            font-size: 3;
+            margin: 0;
+            padding: 5px;
+        }
+        .address {
+            font-family: Calibri;
+            font-size: 16px;
+            font-weight: bold;
+            
+        }
+        .address p,
+        .name p {
+             margin: 0px 0; /* Adjust the margin as needed */
+            padding: 0; /* Remove any padding */
+            font-size: 16px;
+            
+        }
+        .name p {
+            font-family: Monotype, cursive;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .section-heading {
+            font-family: Lucida Console, monospace;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 20px;
+        }
+        .educational-level {
+            font-family: Lucida Console, monospace;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+  
+        .tertiary-level strong {
+            font-size: 4; /* Adjust the font size as needed */
+            font-weight: bold; /* Make the text bold */
+        }
+        .tertiary-level p em strong {
+            font-size: 3;
+        }
+        .tertiary-level p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .secondary-level strong {
+            
+            font-size: 4;/* Adjust the font size as needed */
+            font-weight: bold; /* Make the text bold */
+        }
+        .secondary-level p {
+            margin: 0;
+            padding: 0;
+        }
+        .secondary-level p em strong {
+            font-size: 3;
+        }
+        .secondary-level  {
+            margin-top: 10px;
+        }
+        .secondary-level  p strong {
+            font-family: Perpetua titling mt, bold;
+        }
+        .primary-level  {
+            margin-top: 10px;
+        }
+        .primary-level p em strong {
+            font-size: 3;
+        }
+        .primary-level strong {
+            font-size: 4;/* Adjust the font size as needed */
+            font-weight: bold; /* Make the text bold */
+        }
+        .primary-level p {
+            margin: 0;
+            padding: 0;
+        }
+        .employment {
+            font-family: Lucida Console, monospace;
+            font-size: 5;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .company p em strong{
+            font-weight: bold;
+            font-size: 16px;
+    
+        }
+        .company p {
+            margin: 0;
+            padding: 0;
+        }
+        .skills-qualification {
+            font-family: Lucida Console, monospace;
+            font-size: 4;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .skills p em strong{
+            font-size: 3;
+
+        }
+        .skills p {
+            margin: 0;
+            padding: 0;
+        }
+        .seminar-training {
+            font-family: Lucida Console, monospace;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .seminars table {
+            font-family: Verdana;
+            font-size: 14px;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        .seminars th, .seminars td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        .seminars th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        
+        .character-reference {
+            font-family: Lucida Console, monospace;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .references table {
+            font-family: Verdana;
+            font-size: 12px;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            
+        }
+        
+        .references th, .references td {
+            font-family: Verdana;
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .references th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            font-size: 14px;
+            font-family: Verdana;
+        }
+        
+        .image-container {
+            position: absolute;
+            top: 5px;
+            right: 20px;
+            width: 120px;
+            height: 100px;
+            border: 5px solid #000;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        hr {
+            border: none; /* Remove the default border */
+            height: 2px; /* Adjust the height as desired */
+            background-color: black; /* Set the color of the line */
+        }
+        
+        .hyperlink-bar {
+            text-align: center;
+            margin-top: 10px; /* Add some space above the hyperlink bar */
+            background-color: #acacac; /* Dark background color */
+            padding: 10px 0; /* Add padding to the top and bottom */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .hyperlink-bar a {
+            margin: 0 10px; /* Add some space between links */
+            color: #000000; /* White text color */
+            text-decoration: none; /* Remove underline */
+            transition: opacity 0.3s ease-in-out; /* Smooth transition */
+        }
+
+        .hyperlink-bar a:hover {
+            opacity: 0.7; /* Reduce opacity on hover */
+        }    
+
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="iannn.jpg" alt="Your Image">
+        </div>
+        <div class="address">
+            <p><strong>323, </strong>De Dios Street, </p>
+            <p><strong>Barangay 632, </strong> Sta. Mesa City</p>
+            <p><strong>E-mail address:</strong> accompanied.you@gmail.com</p>
+            <p><strong>Mobile Number:</strong> 09559913824</p>
+        </div>
+        <div class="name">
+            <p>Edrian, Infante Pamplona</p>
+        </div>
+        <hr>
+        <div class="educational-level">EDUCATIONAL:</div>
+        <div class="tertiary-level">
+            <n><p><strong style="font-family: Perpetua titling mt, bold; font-size: 4;">Tertiary Level:</strong></p></n>
+            <p><em><strong><span style="font-family: Verdana, bold; font-size: 3;">BS in Computer Engineering</span></strong></em></p>
+            <p>Polytechnic University of the Philippines</p>
+            <p>H2X6+MP5, PUP Main Entrance Rd, Santa Mesa, Manila, Metro Manila</p>
+            <p>2021 - Present</p>
+        </div>
+        <div class="secondary-level">
+            <n><p><strong style="font-family: Perpetua titling mt, bold; font-size: 4;">Secondary Level:</strong></p></n>
+            <p><em><strong><span style="font-family: Verdana, bold; font-size: 3;">Junior/Senior Highschool</span></strong></em></p>
+            <p>Sacred Heart Academy of Lupao Inc./Dona Juana Chioco National Highschool</p>
+            <p>Lupao, Nueva Ecija</p>
+            <p>2015 - 2020</p>
+        </div>
+        <div class="primary-level">
+            <n><p><strong style="font-family: Perpetua titling mt, bold; font-size: 4;">Primary Level:</strong></p></n>
+            <p><em><strong><span style="font-family: Verdana, bold; font-size: 3;">Elementary</span></strong></em></p>
+            <p>Mapangpang Elementary School</p>
+            <p>Mapangpang, Lupao, Nueva Ecija</p>
+            <p>2007 - 2014</p>
+        </div>
+        <div class="employment">EMPLOYMENT:</div>
+        <div class="company">
+            <p><em><strong><span style="font-family: Verdana, bold;">Lexmeet Inc.</span></strong></em></p>
+            <p>ADB Ave, Ortigas Center, Pasig, 1605 Metro Manila</p>
+            <p> UI/UX Design (Internship)</p>
+            <p>August - October 2023</p>
+        </div>
+        <div class="skills-qualification">SKILLS QUALIFICATION:</div>
+        <div class="skills">
+            <p><em><strong><span style="font-family: Verdana, bold;">Creative Web Design</span></strong></em></p>
+            <p>TESDA</p>
+            <p>Apr. 16 - May 9, 2024 </p>
+        </div>
+        <div class="seminar-training">SEMINAR/TRAINING ATTENDED:</div>
+        <div class="seminars">
+            <table>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Title</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Polytechnic University of the Philippines</td>
+                    <td>EDGE: IoT Meets the Cloud</td>
+                    <td>June 11, 2022</td>
+                </tr>
+                <tr>
+                    <td>WAI: Women in AI</td>
+                    <td>Webinar Series (Data Anaylytics)</td>
+                    <td>September 2023</td>
+                </tr>
+            </table>
+        </div>
+        <div class="character-reference">CHARACTER REFERENCE:</div>
+        <div class="references">
+            <table>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Position</th>
+                    <th>Company Name</th>
+                    <th>Contact Number</th>
+                </tr>
+                <tr>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="hyperlink-bar">
+        <a href="../main.html">Back to Personal Homepage</a>
+        <!-- Add additional links as needed -->
+    </div>
+</body>
+</html>
