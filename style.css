@@ -9,6 +9,12 @@ list-style: none;
 scroll-behavior: smooth;
 font-family: "Poppins", sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 :root {
     --main-color: rgb(255, 255, 255);
     --second-color: rgb(56, 24, 117);
@@ -166,7 +172,7 @@ header {
 .shop-container .box{
     flex: 1 1 10rem;
     background: var(--main-color);
-    padding: 20px;
+    padding: 40px;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -184,7 +190,7 @@ header {
     height: 100%;
     object-fit: contain;
     object-position: center;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 .stars{
     margin: 1rem 0 0.1rem;
@@ -394,11 +400,11 @@ section{
     background-size: cover;
     background-position: center;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
     width: 1200px;
     height: 800px;
-    margin: 20px auto;
+    margin: 90px auto;
     
   }
   .terms-frame p{
@@ -483,3 +489,12 @@ section{
     color: white;
     font-size: 50px;
 }
+
+#proj{
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: #ffffff; /* You can adjust the color as needed */
+    }
+}   
